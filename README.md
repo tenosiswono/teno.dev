@@ -1,78 +1,71 @@
-# With Firebase Hosting and Typescript example
+<a href="https://novela.narative.co" target="_blank">
+<img src="https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-hero.jpg" alt="gatsby-novela-theme hero image" />
+</a>
 
-## How to use
+<br/>
 
-### Using `create-next-app`
+# Gatsby Starter Novela
 
-Execute [`create-next-app`](https://github.com/segmentio/create-next-app) with [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) or [npx](https://github.com/zkat/npx#readme) to bootstrap the example:
+With minimal styling and maximum features — including multiple homepage layouts, built-in social sharing and dark mode — Novela makes it easy to start publishing beautiful articles and stories with Gatsby.
 
-```bash
-npx create-next-app --example with-firebase-hosting-and-typescript with-firebase-hosting-and-typescript-app
-# or
-yarn create next-app --example with-firebase-hosting-and-typescript with-firebase-hosting-and-typescript-app
+Novela is built by the team at [Narative](https://www.narative.co), and built for everyone that loves the web.
+
+<div>
+<a href="https://novela.narative.co" target="_blank">
+<img src="https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-cta-demo.jpg" alt="gatsby-novela-theme live demo" width="295px" />
+</a>
+</div>
+
+<div>
+<a href="https://www.narative.co/design/open/novela" target="_blank">
+<img src="https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-cta-figma.jpg" alt="gatsby-novela-theme figma link" width="295px" />
+</a>
+</div>
+
+# Using Gatsby Starter Novela
+
+This guide will take you through setting up Novela with Gatsby Starter Novela.
+
+### Step 1: Starter installation
+
+##### With `gatsby-cli`:
+
+```sh
+gatsby new novela-site https://github.com/narative/gatsby-starter-novela
 ```
 
-### Download manually
+##### With `git clone`:
 
-Download the example:
+```sh
+git clone git@github.com:narative/gatsby-starter-novela.git novela-site
 
-```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-firebase-hosting-and-typescript
-cd with-firebase-hosting-and-typescript
+cd novela-site
+
+yarn
 ```
 
-Set up firebase:
+### Step 2: Develop & Build
 
-- install Firebase Tools: `npm i -g firebase-tools`
-- create a project through the [firebase web console](https://console.firebase.google.com/)
-- grab the projects ID from the web consoles URL: https://console.firebase.google.com/project/<projectId>
-- update the `.firebaserc` default project ID to the newly created project
-- login to the Firebase CLI tool with `firebase login`
+Once installed or cloned locally and all packages are installed you can begin developing your site.
 
-#### Install project:
+```sh
+# Run localhost
+yarn dev
 
-```bash
-npm install
+# Build your Gatsby site
+yarn build
 ```
 
-#### Run Next.js development:
-
-```bash
-npm run dev
+If wanting to use Netlify CMS as the content editor, then you need to be run the proxy in another terminal tab. Then visit
+http://localhost:8000/admin to view the editor.
+```sh
+# Run proxy
+yarn proxy
 ```
 
-#### Run Firebase locally for testing:
+### Help
 
-```
-npm run serve
-```
+If you don't have *yarn* installed follow the [yarn getting started guide](https://classic.yarnpkg.com/en/docs/getting-started) 
 
-#### Deploy it to the cloud with Firebase:
+For more information visit the [Theme repository](https://github.com/narative/gatsby-theme-novela)
 
-```bash
-npm run deploy
-```
-
-#### Clean dist folder
-
-```bash
-npm run clean
-```
-
-## The idea behind the example
-
-The goal is to host the Next.js app on Firebase Cloud Functions with Firebase Hosting rewrite rules so our app is served from our Firebase Hosting URL, with a complete Typescript stack for both the Next app and for the Firebase Functions. Each individual `page` bundle is served in a new call to the Cloud Function which performs the initial server render.
-
-This is based off of the work of @jthegedus in the [with-firebase-hosting](https://github.com/zeit/next.js/tree/canary/examples/with-firebase-hosting) example.
-
-If you're having issues, feel free to tag @sampsonjoliver in the [issue you create on the next.js repo](https://github.com/zeit/next.js/issues/new)
-
-## Important
-
-- The empty `placeholder.html` file is so Firebase Hosting does not error on an empty `public/` folder and still hosts at the Firebase project URL.
-- `firebase.json` outlines the catchall rewrite rule for our Cloud Function.
-- The [Firebase predeploy](https://firebase.google.com/docs/cli/#predeploy_and_postdeploy_hooks) hooks defined in `firebase.json` will handle linting and compiling of the next app and the functions sourceswhen `firebase deploy` is invoked. The only scripts you should need are `dev`, `clean` and `deploy`.
-- Specifying [`"engines": {"node": "8"}`](package.json#L5-L7) in the `package.json` is required for firebase functions
-  to be deployed on Node 8 rather than Node 6
-  ([Firebase Blog Announcement](https://firebase.googleblog.com/2018/08/cloud-functions-for-firebase-config-node-8-timeout-memory-region.html))
-  . This is matched in by specifying target as `es2017` in [`src/functions/tsconfig.json`](src/functions/tsconfig) so that typescript output somewhat compacter and moderner code.
