@@ -12,8 +12,8 @@ export default function Header() {
     <header className="flex items-center justify-between py-10">
       <div>
         <Link href="/" aria-label={siteMetadata.headerTitle}>
-          <div className="flex items-center justify-between text-xl font-semibold text-primary-color dark:text-primary-color-dark">
-            {'ts ~/'}
+          <div className="flex items-center justify-between text-xl font-semibold text-primary-500">
+            <span className="text-gray-900 dark:text-gray-50">{'ts ~/'}</span>
             <Typewriter
               options={{
                 strings: router.asPath.slice(1),
