@@ -1,71 +1,49 @@
-<a href="https://novela.narative.co" target="_blank">
-<img src="https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-hero.jpg" alt="gatsby-novela-theme hero image" />
-</a>
+# teno.dev
 
-<br/>
+## Installation
 
-# Gatsby Starter Novela
-
-With minimal styling and maximum features — including multiple homepage layouts, built-in social sharing and dark mode — Novela makes it easy to start publishing beautiful articles and stories with Gatsby.
-
-Novela is built by the team at [Narative](https://www.narative.co), and built for everyone that loves the web.
-
-<div>
-<a href="https://novela.narative.co" target="_blank">
-<img src="https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-cta-demo.jpg" alt="gatsby-novela-theme live demo" width="295px" />
-</a>
-</div>
-
-<div>
-<a href="https://www.narative.co/design/open/novela" target="_blank">
-<img src="https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-cta-figma.jpg" alt="gatsby-novela-theme figma link" width="295px" />
-</a>
-</div>
-
-# Using Gatsby Starter Novela
-
-This guide will take you through setting up Novela with Gatsby Starter Novela.
-
-### Step 1: Starter installation
-
-##### With `gatsby-cli`:
-
-```sh
-gatsby new novela-site https://github.com/narative/gatsby-starter-novela
-```
-
-##### With `git clone`:
-
-```sh
-git clone git@github.com:narative/gatsby-starter-novela.git novela-site
-
-cd novela-site
-
+```bash
 yarn
 ```
 
-### Step 2: Develop & Build
+## Development
 
-Once installed or cloned locally and all packages are installed you can begin developing your site.
+First, run the development server:
 
-```sh
-# Run localhost
+```bash
+yarn start
+```
+
+or
+
+```bash
 yarn dev
-
-# Build your Gatsby site
-yarn build
 ```
 
-If wanting to use Netlify CMS as the content editor, then you need to be run the proxy in another terminal tab. Then visit
-http://localhost:8000/admin to view the editor.
-```sh
-# Run proxy
-yarn proxy
-```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Help
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-If you don't have *yarn* installed follow the [yarn getting started guide](https://classic.yarnpkg.com/en/docs/getting-started) 
+## License
 
-For more information visit the [Theme repository](https://github.com/narative/gatsby-theme-novela)
+The MIT License (MIT)
 
+Copyright (c) 2024 Teno Siswono
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
