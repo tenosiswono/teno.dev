@@ -34,9 +34,7 @@ module.exports = {
       },
       colors: {
         'background-color': '#1F2023',
-        'primary-color': '#1e90ff',
-        'primary-color-dark': '#FFFF66',
-        primary: colors.teal,
+        primary: colors.indigo,
         gray: colors.neutral,
       },
       typography: (theme) => ({
