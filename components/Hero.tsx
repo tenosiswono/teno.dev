@@ -11,7 +11,6 @@ import ThreeCanvas from './ThreeCanvas'
 export default function Hero(): ReactElement {
   const ref = useRef<HTMLHeadingElement>(null)
   const { scrollY } = useContext(ScrollContext)
-
   let progress = 0
   const { current: elContainer } = ref
 
@@ -71,7 +70,33 @@ export default function Hero(): ReactElement {
           </div>
         </AnimatePresence>
       </motion.div>
-      <ThreeCanvas />
+      <AnimatePresence>
+        <motion.div
+          initial={{ y: -1 }}
+          animate={{
+            y: 0,
+            transition: {
+              duration: 0,
+              delay: 2,
+              ease: 'easeInOut',
+            },
+          }}
+        >
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{
+              opacity: 1,
+              transition: {
+                duration: 1.5,
+                delay: 2,
+                ease: 'easeInOut',
+              },
+            }}
+          >
+            <ThreeCanvas />
+          </motion.div>
+        </motion.div>
+      </AnimatePresence>
     </div>
   )
 }
