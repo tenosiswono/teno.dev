@@ -698,6 +698,36 @@ export default function ThreeModel({ ...props }) {
               material={materials.Material}
             />
           </group>
+          <pointLight
+            name="Point Light"
+            // castShadow
+            intensity={0.6}
+            distance={1011}
+            color="#c2d3fe"
+            position={[319.47, 509.35, -330.97]}
+            rotation={[0, -Math.PI / 6, 0]}
+          />
+          <directionalLight
+            name="Directional Light"
+            castShadow
+            intensity={0.8}
+            shadow-mapSize-width={2048}
+            shadow-mapSize-height={2048}
+            shadow-camera-near={1}
+            shadow-camera-far={1500}
+            shadow-camera-left={-1500}
+            shadow-camera-right={1500}
+            shadow-camera-top={1500}
+            shadow-camera-bottom={-1500}
+            color="#feefe8"
+            position={[-189.41, 460.06, 327.57]}
+          />
+          <hemisphereLight
+            name="Default Ambient Light"
+            intensity={0.75}
+            color="#eaeaea"
+            position={[0, 1, 0]}
+          />
         </group>
       </group>
     </>
