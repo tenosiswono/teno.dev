@@ -18,7 +18,7 @@ export default function ThreeCanvas() {
       }}
       className="bg-skin-base pointer-events-none absolute -z-10"
     >
-      <Suspense fallback={null}>
+      <Suspense fallback={'...'}>
         <ThreeModel />
       </Suspense>
     </Canvas>
