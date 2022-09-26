@@ -734,4 +734,4 @@ export default function ThreeModel({ ...props }) {
   )
 }
 
-useGLTF.preload('/minimul.gltf')
+useGLTF.preload('/static/3d/minimul.gltf')
