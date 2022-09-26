@@ -34,18 +34,18 @@ export default function Hero(): ReactElement {
             <div className="-mt-36">
               <div ref={ref} className="flex cursor-default flex-col space-y-2">
                 <FadeUp duration={0.6}>
-                  <h1 className="text-5xl font-semibold sm:text-7xl md:text-8xl xl:text-9xl">
+                  <h1 className="text-4xl font-semibold sm:text-5xl md:text-6xl xl:text-7xl">
                     Teno Siswono
                   </h1>
                 </FadeUp>
                 <FadeUp duration={0.6} delay={0.2}>
-                  <h2 className="text-3xl font-medium opacity-80 sm:text-6xl md:text-6xl xl:text-7xl">
+                  <h2 className="text-2xl font-medium opacity-80 sm:text-4xl md:text-4xl xl:text-5xl">
                     I love to build amazing Webs.
                   </h2>
                 </FadeUp>
                 <FadeRight duration={0.5} delay={0.8}>
                   <Link href="/about">
-                    <span className="underline-magical text-md w-max cursor-pointer sm:text-lg md:text-xl xl:text-2xl">
+                    <span className="underline-magical text-md w-max cursor-pointer sm:text-lg md:text-xl xl:text-xl">
                       Read more about me &rarr;
                     </span>
                   </Link>
@@ -87,7 +87,7 @@ export default function Hero(): ReactElement {
             animate={{
               opacity: 1,
               transition: {
-                duration: 1.5,
+                duration: 1,
                 delay: 2,
                 ease: 'easeInOut',
               },

@@ -18,6 +18,8 @@
     "@fontsource/inter": "4.5.2",
     "@react-three/drei": "9.13.2",
     "@react-three/fiber": "8.2.2",
+    "@splinetool/loader": "^0.9.109",
+    "@splinetool/r3f-spline": "^1.0.2",
     "@tailwindcss/forms": "^0.4.0",
     "@tailwindcss/typography": "^0.5.0",
     "autoprefixer": "^10.4.0",
