@@ -31,38 +31,6 @@ export default function Now() {
           <li>React Router</li>
           <li>i18n for internationalization</li>
         </ol>
-        <p className="mb-6">
-          In addition to my main responsibilities, I am also exploring full-stack JavaScript
-          development. As part of this exploration, I have built a project called "auction" which
-          can be found at{' '}
-          <a
-            href="https://github.com/tenosiswono/auction"
-            className="text-primary-500"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://github.com/tenosiswono/auction
-          </a>
-          . This exercise project is built using the following technologies:
-        </p>
-        <ol className="mb-6 list-decimal pl-8">
-          <li>Next.js as the base framework</li>
-          <li>NextAuth.js for authentication</li>
-          <li>Prisma as the database ORM</li>
-          <li>Tailwind CSS as the CSS framework</li>
-          <li>tRPC for end-to-end typesafe APIs</li>
-          <li>Supabase for image uploading and Postgres server</li>
-          <li>Inngest for handling background jobs, crons, webhooks, and workflows</li>
-          <li>Vitest as the test framework</li>
-          <li>Pusher for WebSocket communication to handle real-time data</li>
-        </ol>
-        <p className="mb-6">
-          For my next exercise project, I plan to build a no-code platform. Drawing from my
-          experience in modifying and extending Grafana, I want to create a more universal platform
-          that allows users to build custom websites without writing code. I intend to leverage
-          t3stacks, similar to my previous exercise project, to streamline the development process
-          and maintain consistency across projects.
-        </p>
       </div>
     </LayoutWrapper>
   )

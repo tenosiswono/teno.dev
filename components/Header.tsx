@@ -16,7 +16,7 @@ export default function Header() {
             <span className="text-gray-900 dark:text-gray-50">{'ts ~/'}</span>
             <Typewriter
               options={{
-                strings: router.asPath.slice(1),
+                strings: router.asPath.split('?')[0].slice(1),
                 autoStart: true,
                 loop: false,
               }}
